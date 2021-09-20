@@ -1,0 +1,3 @@
+python.exe manage.py runserver
+
+pip freeze > requirements.txt  ale w kataolu projektu nie aplikacji
