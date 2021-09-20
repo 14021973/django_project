@@ -24,11 +24,7 @@
     <autoscroll-to-editor value="false" />
     <autoscroll-from-editor value="true" />
     <show-object-properties value="true" />
-    <loaded-nodes>
-      <connection connection-id="f8664f43-ac49-470d-8561-c60fc1a7355f">
-        <schema name="main" object-types="table, view, constraint, index, column, dataset trigger" />
-      </connection>
-    </loaded-nodes>
+    <loaded-nodes />
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="f8664f43-ac49-470d-8561-c60fc1a7355f">
@@ -36,16 +32,7 @@
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
-    <open-files>
-      <object connection-id="f8664f43-ac49-470d-8561-c60fc1a7355f" object-ref="schemas/main/tables/auth_permission" />
-      <object connection-id="f8664f43-ac49-470d-8561-c60fc1a7355f" object-ref="schemas/main/tables/django_content_type" />
-      <object connection-id="f8664f43-ac49-470d-8561-c60fc1a7355f" object-ref="schemas/main/tables/django_session" />
-      <object connection-id="f8664f43-ac49-470d-8561-c60fc1a7355f" object-ref="schemas/main/tables/auth_user" />
-      <object connection-id="f8664f43-ac49-470d-8561-c60fc1a7355f" object-ref="schemas/main/tables/django_admin_log" />
-      <object connection-id="f8664f43-ac49-470d-8561-c60fc1a7355f" object-ref="schemas/main/tables/django_migrations" />
-      <object connection-id="f8664f43-ac49-470d-8561-c60fc1a7355f" object-ref="schemas/main/tables/sqlite_sequence" />
-      <object connection-id="f8664f43-ac49-470d-8561-c60fc1a7355f" object-ref="schemas/main/tables/blog_post" />
-    </open-files>
+    <open-files />
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
     <connection id="f8664f43-ac49-470d-8561-c60fc1a7355f" />
@@ -132,7 +119,7 @@
           <session-management value="true" />
           <ddl-file-binding value="true" />
           <database-logging value="false" />
-          <connect-automatically value="true" />
+          <connect-automatically value="false" />
           <restore-workspace value="true" />
           <restore-workspace-deep value="true" />
           <environment-type value="default" />
