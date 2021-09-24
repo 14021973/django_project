@@ -34,6 +34,10 @@
             <!-- Navbar Right Side -->
             <div class="navbar-nav">
                 {% if user.is_authenticated %}
+                {% if user.is_staff %}
+            <a class="nav-item nav-link" href="{% url 'admin:index' %}">Admin</a>
+                {% endif %}
+               <a class="nav-item nav-link" href="{% url 'post-create' %}">New Post</a>
                <a class="nav-item nav-link" href="{% url 'profile' %}">Profile</a>
                <a class="nav-item nav-link" href="{% url 'logout' %}">Logout</a>
                 {% else %}
@@ -48,14 +52,19 @@
     <main role="main" class="container">
       <div class="row">
         <div class="col-md-8">
+
           {% if messages %}
-          {% for message in messages %}
-            <div class="alert alert-{{ message.tags }}">
-            {{ message }}
-            </div>
-          {% endfor %}
+              {% for message in messages %}
+                    {% if message.tags == 'error' %}
+                        <div class="alert alert-danger">{{ message }}</div>
+                    {% else %}
+                        <div class="alert alert-{{ message.tags }}">{{ message }}</div>
+                    {% endif %}
+              {% endfor %}
           {% endif %}
+
           {% block content %}{% endblock %}
+
         </div>
         <div class="col-md-4">
           <div class="content-section">

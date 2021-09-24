@@ -24,7 +24,11 @@
     <autoscroll-to-editor value="false" />
     <autoscroll-from-editor value="true" />
     <show-object-properties value="true" />
-    <loaded-nodes />
+    <loaded-nodes>
+      <connection connection-id="f8664f43-ac49-470d-8561-c60fc1a7355f">
+        <schema name="main" object-types="table, view" />
+      </connection>
+    </loaded-nodes>
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="f8664f43-ac49-470d-8561-c60fc1a7355f">
@@ -38,14 +42,18 @@
     <connection id="f8664f43-ac49-470d-8561-c60fc1a7355f" />
   </component>
   <component name="DBNavigator.Project.DatasetFilterManager">
-    <filter-actions connection-id="f8664f43-ac49-470d-8561-c60fc1a7355f" dataset="main.auth_user" active-filter-id="EMPTY_FILTER" />
+    <filter-actions connection-id="f8664f43-ac49-470d-8561-c60fc1a7355f" dataset="main.auth_user_user_permissions" active-filter-id="EMPTY_FILTER" />
     <filter-actions connection-id="f8664f43-ac49-470d-8561-c60fc1a7355f" dataset="main.django_migrations" active-filter-id="EMPTY_FILTER" />
-    <filter-actions connection-id="f8664f43-ac49-470d-8561-c60fc1a7355f" dataset="main.sqlite_sequence" active-filter-id="EMPTY_FILTER" />
-    <filter-actions connection-id="f8664f43-ac49-470d-8561-c60fc1a7355f" dataset="main.auth_group" active-filter-id="" />
-    <filter-actions connection-id="f8664f43-ac49-470d-8561-c60fc1a7355f" dataset="main.blog_post" active-filter-id="EMPTY_FILTER" />
+    <filter-actions connection-id="f8664f43-ac49-470d-8561-c60fc1a7355f" dataset="main.auth_group_permissions" active-filter-id="EMPTY_FILTER" />
     <filter-actions connection-id="f8664f43-ac49-470d-8561-c60fc1a7355f" dataset="main.django_content_type" active-filter-id="EMPTY_FILTER" />
     <filter-actions connection-id="f8664f43-ac49-470d-8561-c60fc1a7355f" dataset="main.django_session" active-filter-id="EMPTY_FILTER" />
     <filter-actions connection-id="f8664f43-ac49-470d-8561-c60fc1a7355f" dataset="main.django_admin_log" active-filter-id="EMPTY_FILTER" />
+    <filter-actions connection-id="f8664f43-ac49-470d-8561-c60fc1a7355f" dataset="main.auth_user" active-filter-id="EMPTY_FILTER" />
+    <filter-actions connection-id="f8664f43-ac49-470d-8561-c60fc1a7355f" dataset="main.auth_user_groups" active-filter-id="EMPTY_FILTER" />
+    <filter-actions connection-id="f8664f43-ac49-470d-8561-c60fc1a7355f" dataset="main.sqlite_sequence" active-filter-id="EMPTY_FILTER" />
+    <filter-actions connection-id="f8664f43-ac49-470d-8561-c60fc1a7355f" dataset="main.auth_group" active-filter-id="EMPTY_FILTER" />
+    <filter-actions connection-id="f8664f43-ac49-470d-8561-c60fc1a7355f" dataset="main.users_profile" active-filter-id="EMPTY_FILTER" />
+    <filter-actions connection-id="f8664f43-ac49-470d-8561-c60fc1a7355f" dataset="main.blog_post" active-filter-id="EMPTY_FILTER" />
     <filter-actions connection-id="f8664f43-ac49-470d-8561-c60fc1a7355f" dataset="main.auth_permission" active-filter-id="EMPTY_FILTER" />
   </component>
   <component name="DBNavigator.Project.EditorStateManager">
@@ -119,7 +127,7 @@
           <session-management value="true" />
           <ddl-file-binding value="true" />
           <database-logging value="false" />
-          <connect-automatically value="false" />
+          <connect-automatically value="true" />
           <restore-workspace value="true" />
           <restore-workspace-deep value="true" />
           <environment-type value="default" />
@@ -130,7 +138,7 @@
           <max-connection-pool-size value="7" />
           <alternative-statement-delimiter value="" />
         </details>
-        <object-filters hide-empty-schemas="false" hide-pseudo-columns="false">
+        <object-filters hide-empty-schemas="true" hide-pseudo-columns="false">
           <object-type-filter use-master-settings="true">
             <object-type name="SCHEMA" enabled="true" />
             <object-type name="USER" enabled="true" />
