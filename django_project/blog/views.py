@@ -1,3 +1,5 @@
+from django.contrib import messages
+from django.contrib.auth.views import redirect_to_login
 from django.shortcuts import render,get_object_or_404,redirect
 from .models import Post
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
@@ -20,14 +22,15 @@ class UserAccessMixin(PermissionRequiredMixin):
         if (not self.request.user.is_authenticated):
             return redirect_to_login(self.request.get_full_path(),self.get_login_url(),self.get_redirect_field_name())
         if not self.has_permission():
-            return redirect('blog-home')
+            messages.error(request, f'Access denied!')
+            return redirect('blog-about')
         return super(UserAccessMixin,self).dispatch(request,*args,**kwargs)
 
 
 
 
 
-#class PostListView(PermissionRequiredMixin,ListView):
+#class PostListView(UserAccessMixin,ListView):
 class PostListView(ListView):
 
     # permission_required = 'blog.view_post'

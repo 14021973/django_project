@@ -24,11 +24,7 @@
     <autoscroll-to-editor value="false" />
     <autoscroll-from-editor value="true" />
     <show-object-properties value="true" />
-    <loaded-nodes>
-      <connection connection-id="f8664f43-ac49-470d-8561-c60fc1a7355f">
-        <schema name="main" object-types="table, view" />
-      </connection>
-    </loaded-nodes>
+    <loaded-nodes />
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="f8664f43-ac49-470d-8561-c60fc1a7355f">
@@ -52,8 +48,8 @@
     <filter-actions connection-id="f8664f43-ac49-470d-8561-c60fc1a7355f" dataset="main.auth_user_groups" active-filter-id="EMPTY_FILTER" />
     <filter-actions connection-id="f8664f43-ac49-470d-8561-c60fc1a7355f" dataset="main.sqlite_sequence" active-filter-id="EMPTY_FILTER" />
     <filter-actions connection-id="f8664f43-ac49-470d-8561-c60fc1a7355f" dataset="main.auth_group" active-filter-id="EMPTY_FILTER" />
-    <filter-actions connection-id="f8664f43-ac49-470d-8561-c60fc1a7355f" dataset="main.users_profile" active-filter-id="EMPTY_FILTER" />
     <filter-actions connection-id="f8664f43-ac49-470d-8561-c60fc1a7355f" dataset="main.blog_post" active-filter-id="EMPTY_FILTER" />
+    <filter-actions connection-id="f8664f43-ac49-470d-8561-c60fc1a7355f" dataset="main.users_profile" active-filter-id="EMPTY_FILTER" />
     <filter-actions connection-id="f8664f43-ac49-470d-8561-c60fc1a7355f" dataset="main.auth_permission" active-filter-id="EMPTY_FILTER" />
   </component>
   <component name="DBNavigator.Project.EditorStateManager">
