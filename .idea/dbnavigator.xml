@@ -24,7 +24,11 @@
     <autoscroll-to-editor value="false" />
     <autoscroll-from-editor value="true" />
     <show-object-properties value="true" />
-    <loaded-nodes />
+    <loaded-nodes>
+      <connection connection-id="f8664f43-ac49-470d-8561-c60fc1a7355f">
+        <schema name="main" object-types="table, view, constraint, index, column, dataset trigger" />
+      </connection>
+    </loaded-nodes>
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="f8664f43-ac49-470d-8561-c60fc1a7355f">
@@ -93,7 +97,7 @@
           <port value="" />
           <database value="" />
           <files>
-            <file path="C:\Users\kzaw\PycharmProjects\django_project\django_project\db.sqlite3" schema="main" />
+            <file path="C:\Users\KZ\PycharmProjects\django_project\django_project\db.sqlite3" schema="main" />
           </files>
           <type value="NONE" />
           <user value="" />
